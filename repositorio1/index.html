@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body class="container-fluid">
+    <div class="botonesColor">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <button type="button" id="botonBlueMode" class="btn btn-primary">Modo azul</button>
+            </div>
+            <div class="col-4">
+                <button type="button" id="botonRedMode" class="btn btn-danger">Modo rojo</button>
+            </div>
+            <div class="col-4">
+                <button type="button" id="botonWhiteMode" class="btn btn-light">Modo blanco</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tituloPag row justify-content-center">
+        <h1 id="titular">Bienvenidos a la mejor página de los nominados al MVP de la NBA</h1>
+    </div>
+
+    <div class="subtituloPag row justify-content-center">
+        <h4 class="subtitular">Aquí encontrarás los nominados al premio al Mejor Jugador de la NBA</h4>
+    </div>
+
+
+    <div class="parrafoInicial row justify-content-center">
+        <p>En esta página podrás ver a los 5 jugadores nominados al MVP y también podrás hacer
+            tu propia asignación ficticia al premio: puede ser tu jugador favorito o tú mismo.
+        </p>
+    </div>
+
+    <div class="formularioAgregar row justify-content-center">
+        <form>
+            <label for="jugador">Ingrese el nombre del jugador:</label>
+            <input type="text" id="jugadorInput" name="jugador">
+            <label for="equipo">Ingrese el equipo del jugador:</label>
+            <input type="text" id="equipoInput" name="equipo">
+            <label for="posición">Ingrese la posición del jugador:</label>
+            <input type="text" id="posiciónInput" name="posición">
+            <button type="button" class="btn btn-danger" id="guardarJugadorBtn">Guardar jugador</button>
+        </form>
+    </div>
+
+    <div class="botonesInteract row justify-content-center">
+        <button type="button" class="btn btn-primary" id="mostrarJugadores">Mostrar jugadores nominados</button>
+        <button type="button" class="btn btn-danger" id="ocultarJugadores">Ocultar jugadores nominados</button>
+    </div>
+
+
+    <div id="jugadores" class="cartasJuga row justify-content-center">
+        <div id="cargando"></div>
+    </div>
+
+    <div class="parrafoFinal row justify-content-center">
+        <p>También puedes calcular el promedio de puntos por partido de tu jugador favorito y ver
+            si sus números son suficientes para ser un candidato al premio. ¡¡O puedes calcular los tuyos!!
+        </p>
+
+    </div>
+
+    <div class="botonCalculador row justify-content-center">
+        <form>
+            <button type="button" class="btn btn-primary" id="mostrarData">Averigüelo</button>
+        </form>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.0/build/global/luxon.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

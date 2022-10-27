@@ -1,0 +1,36 @@
+[{
+    "nombre": "Curry",
+    "equipo": "Golden State Warriors",
+    "posición": "Base",
+    "imagen": "Curry.jpg"
+
+  },
+  {
+    "nombre": "Mitchell",
+    "equipo": "Utah Jazz",
+    "posición": "Escolta",
+    "imagen": "Mitchell.jpg"
+  
+  },
+  {
+    "nombre": "James",
+    "equipo": "Los Ángeles Lakers",
+    "posición": "Alero",
+    "imagen": "James.jpg"
+  
+  },
+  {
+    "nombre": "Williamson",
+    "equipo": "New Orleans Pelicans",
+    "posición": "Ala-Pívot",
+    "imagen": "Williamson.jpg"
+  
+  },
+  {
+    "nombre": "Embiid",
+    "equipo": "Philadelphia 76ers",
+    "posición": "Pívot",
+    "imagen": "Embiid.jpg"
+  
+  }
+  ]
